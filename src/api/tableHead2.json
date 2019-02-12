@@ -1,0 +1,84 @@
+{
+  "data":[
+    {
+      "title":"设备列表",
+      "tableHead": {
+        "equipmentName":"设备名称",
+        "equipmentNo":"设备编号",
+        "equipmentLocation":"设备位置",
+        "systemType":"系统类型",
+        "equipmentStatus":"设备状态",
+        "model":"型号",
+        "specification":"规格"
+      }
+    },{
+      "title":"合同列表",
+      "tableHead": {
+        "OID": "1",
+        "contractName": "合同名称",
+        "contractNo": "合同编号",
+        "endTime": "终止日期",
+        "founder": "创建人",
+        "lesseeCompany": "承租人/公司",
+        "projectLocation": "项目位置",
+        "remainingDays": "剩余天数",
+        "rentAmount": "承租量",
+        "startingTime": "起始日期",
+        "totalAmount": "总金额"
+      }
+    },{
+      "title":"费用列表",
+      "tableHead": {
+        "advanceDays": "提前天数",
+        "amount": "金额",
+        "contractName": "合同名称",
+        "contractNo": "合同编号",
+        "effectiveDate": "费用有效期",
+        "expensesCourse": "厂房租赁费",
+        "measuringUnit": "计量单位",
+        "rentAmount": "承租量",
+        "state": "状态",
+        "unitPrice": "单价"
+      }
+    },{
+      "title":"维保记录",
+      "tableHead": {
+        "completion": "完成情况",
+        "endTime": "执行日期",
+        "headMan": "负责人",
+        "projectName": "项目名称",
+        "repairOrderName": "工单名称",
+        "startTime": "派单日期",
+        "systemName": "系统名称",
+        "workOrderNo": "工单编号",
+        "workOrderStatus": "工单状态",
+        "workOrderType": "工单类型"
+      }
+    },
+    {
+      "title": "计划任务",
+      "tableHead": {
+        "endTime": "结束日期",
+        "founder": "创建人",
+        "frequency": "频次",
+        "headMan": "负责人",
+        "planName": "计划名称",
+        "projectName": "项目名称",
+        "startTime": "开始日期",
+        "systemType": "系统类型"
+      }
+    },
+    {
+      "title": "消息列表",
+      "tableHead": {
+        "contractName": "合同名称",
+        "contractPosition": "合同位置",
+        "remindType": "提醒类型",
+        "remindInformation": "提醒信息",
+        "contractNo": "合同号",
+        "promptTime": "提示时间",
+        "restTime": "剩余时间"
+      }
+    }
+  ]
+}

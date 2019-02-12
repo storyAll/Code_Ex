@@ -1,0 +1,90 @@
+@tfAsideRightWidth: 320px;
+@tfAsideRightHeight: calc(100% - 77px);
+@tfAsideRightMinHeight: 530px;
+@minWidth:1440px; // 按照设计图1440px
+@leftRightTop:120px;
+.comFixed(@zIndex:3) {
+  position: fixed;
+  z-index: @zIndex;
+}
+
+.comBg() {
+  background: rgba(25, 52, 82, 0.94);
+  box-shadow: 0px 0px 10px 0px rgba(0, 27, 51, 0.35);
+}
+// 透明动画
+&.animationFade-enter-active, &.animationFade-leave {
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+
+&.animationFade-enter, &.animationFade-leave-active {
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+//左侧显隐动画
+&.animationLeft-enter-active, &.animationLeft-leave {
+  transition: all 0.3s linear;
+  transform: translateX(0%);
+}
+
+&.animationLeft-enter, &.animationLeft-leave-active {
+  transition: all 0.3s linear;
+  transform: translateX(-100%);
+}
+//右侧显隐动画
+&.animationRight-enter-active, &.animationRight-leave {
+  transition: all 0.3s linear;
+  transform: translateX(0%);
+}
+
+&.animationRight-enter, &.animationRight-leave-active {
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+}
+//底部显隐动画
+&.animationBottom-enter-active, &.animationBottom-leave {
+  transition: all 0.3s linear;
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+&.animationBottom-enter, &.animationBottom-leave-active {
+  transition: all 0.3s linear;
+  transform: translateY(100%);
+  opacity: 0;
+}
+//底部显隐动画
+&.animationTop-enter-active, &.animationTop-leave {
+  transition: all 0.3s linear;
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+&.animationTop-enter, &.animationTop-leave-active {
+  transition: all 0.3s linear;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+&.fade-enter-active, &.fade-leave-active {
+  transition: all 0.5s ease
+}
+
+&.fade-enter, &.fade-leave-active {
+  opacity: 0
+}

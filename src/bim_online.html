@@ -1,0 +1,129 @@
+<!doctype html><html><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="description" content="BIM可视化平台 v1.0">
+  <link href="external/bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet">
+  <link href="external/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet" />
+  <link href="external/jquery.datetimepicker-2.4.7/jquery.datetimepicker.css" rel="stylesheet" />
+  <link href="res/app-0.1.0.css" rel="stylesheet" />
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/jq-ajax-progress-1.0.0.js"></script>
+  <script src="external/jquery-mousewheel-3.1.12/jquery.mousewheel.js"></script>
+  <script src="external/jquery-ui-1.11.4/jquery-ui.js"></script>
+  <script src="external/bootstrap-3.3.5/js/bootstrap.js"></script>
+  <script src="js/moment-with-locales-2.11.2.js"></script>
+  <script src="external/jquery.datetimepicker-2.4.7/jquery.datetimepicker.full.js"></script>
+  <script src="js/underscore-1.8.3.js"></script>
+  <script src="js/backbone-1.2.3.js"></script>
+  <script src="js/store_json2-1.3.20.js"></script>
+  <script src="js/XORCipher.js"></script>
+  <script src="js/is-0.7.6.js"></script>
+  <script src="js/raphael-2.1.4.js"></script>
+  <script src="js/detector.js"></script>
+  <script src="js/three.js"></script>
+  <script src="conf/conf.js?v=1"></script>
+  <script src="js/app.js?v=1"></script>
+  <script src="external/stats.js"></script>
+  <script src="external/shaders/CopyShader.js"></script>
+  <script src="external/shaders/FXAAShader.js"></script>
+  <script src="external/postprocessing/EffectComposer.js"></script>
+  <script src="external/postprocessing/RenderPass.js"></script>
+  <script src="external/postprocessing/ShaderPass.js"></script>
+  <script src="external/postprocessing/OutlinePass.js"></script>
+  <script src="external/renderers/CSS2DRenderer.js"></script>
+</head>
+<body>
+<!--<div id="root">-->
+  <!--<button onclick="putWebgo('coldMachine')">查看设备</button>-->
+<!--</div>-->
+<div id="root_">
+  <div id="root_view">
+    <div id="root_content">
+      <div id="main_" style="display:none">
+        <div id="main_content"></div>
+
+        <div id="scene_" class="scene_ content"  style="display:none">
+          <div id="scene_content" style="display:block">
+            <div id="scene_container"></div>
+            <!--<div id="scene_tool" style="position:absolute;bottom:5px;text-align:center;z-index:100;display:none">-->
+              <!--<nav class="navbar navbar-inverse" style="display:inline-block">-->
+                <!--<ul class="nav navbar-nav">-->
+                  <!--<li><a id="scene_home" class="glyphicon glyphicon-home btn-lg" title="主视图"><span style="margin-left:3px;vertical-align:text-top">主视图</span></a></li>-->
+                  <!--<li><a id="scene_transform" class="glyphicon glyphicon-tasks btn-lg" title="模型变换"><span style="margin-left:3px;vertical-align:text-top">模型变换</span></a></li>-->
+                  <!--<li><a id="scene_structure" class="glyphicon glyphicon-list-alt btn-lg" title="结构属性"><span style="margin-left:3px;vertical-align:text-top">结构属性</span></a></li>-->
+                  <!--<li class="dropdown dropup" id="scene_stateli" style="display:none">-->
+                    <!--<button id="scene_statebtn" class="btn btn-primary dropdown-toggle disabled glyphicon glyphicon-equalizer" data-toggle="dropdown" style="font-size:18px"><span id="scene_statetext" style="margin:0 4px 0 4px">进度</span><span class="caret"></span></button>-->
+                  <!--</li>-->
+                <!--</ul>-->
+              <!--</nav>-->
+            <!--</div>-->
+
+            <div id="structure_" class="structure_ content"  style="display:none">
+              <table class="view_table" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td id="structure_caption" class="view_caption">
+                    &nbsp;结构浏览器
+                    <button id="structure_close" style="background-image:url(res/default/close.png)"></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div id="structure_content"></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="property_" class="property_ content"  style="display:none">
+              <table class="view_table" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td id="property_caption" class="view_caption">&nbsp;属性查看器</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div id="property_content">
+                      <table id="property_data" style="width:100%;border: black 1px;border-collapse:collapse" borderColor=black cellSpacing=0 cellPadding=3 rules=all border=1></table>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div id="scene_progress" style="position:absolute;bottom:50%;width:200px;z-index:2048">
+              <div style="position: absolute; left:50px; top: 4px; font-weight:bold">正在加载数据</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="root_wait" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="root_wait_title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="root_wait_title"></h4>
+      </div>
+      <div class="modal-body">
+        <div class="progress" style="margin:0">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="btn" style="position:absolute;width:5%;left:200px;top:0px">
+  <!--<button type="button" onclick="BIM.Viewer.ShowLog()">加载数据</button>-->
+  <!--button type="button" onclick="BIM.Viewer.ShowPanel()">显示面板</button-->
+</div>
+</body>
+</html>

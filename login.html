@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./login.css">
+  <link rel="stylesheet" type="text/css" href="./iconfont.css">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://192.168.41.192:8080/RevitDisplaySystem/Data/jdall2.rvt.json"></script>
+</head>
+<body>
+  <div id='app'>
+    <div class="logo-title">
+      <!--<img src="./login-logo.png" />-->
+      <embed src="logo_login_tianbao.svg" style="width: 300px;">
+    </div>
+  	<div class="from-user" style="margin-top: -60px">
+  		<div class="login-from">
+	    	<i class='iconfont icon-user'></i>
+	    	<input type="text" placeholder="账户" class="user" />
+	    </div>
+	    <div class="login-from">
+	    	<i class='iconfont icon-password'></i>
+	    	<input type="password" placeholder="密码" class="password" />
+	    </div>
+	    <button class="btn">登&nbsp;&nbsp;录</button>
+  	</div>
+  	<div class="footer">copyright&nbsp;@&nbsp;2018&nbsp;天房科技发展股份有限公司</div>
+  </div>
+  <div class="error">账户不存在</div>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+  			var bool = true
+  			$('.btn').on('click',function(){
+  				login();
+				})
+				function login(){
+					if(bool){
+  					bool = false
+						if($('.user').val()==='admin'){
+							if($('.password').val()==="admin"){
+								window.sessionStorage.setItem('login','true');
+								window.location.href='./index.html'
+							}
+							else{
+								$('.error').text('密码错误，请检查您的密码').show(500).delay(1000).hide(200,function(){
+									bool = true
+								})
+							}
+						}
+						else{
+							$('.error').text('账户不存在，请联系管理员').show(500).delay(1000).hide(200,function(){
+								bool = true
+							})
+						}
+  				}
+				}
+				$(".password").keydown(function() {
+		      if(event.keyCode == "13") {
+	          login();
+		      }
+    		})
+  	});
+  </script>
+</body>
+</html>

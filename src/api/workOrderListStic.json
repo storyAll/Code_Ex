@@ -1,0 +1,84 @@
+{
+  "repairOrderStatistics": {
+    "byYear": [
+      {
+        "time": "第一季",
+        "count": "60"
+      },
+      {
+        "time": "第二季",
+        "count": "30"
+      },
+      {
+        "time": "第三季",
+        "count": "80"
+      },
+      {
+        "time": "第四季",
+        "count": "60"
+      }
+    ],
+    "bymonth": [
+      {
+        "time": "第一周",
+        "count": "120"
+      },
+      {
+        "time": "第二周",
+        "count": "87"
+      },
+      {
+        "time": "第三周",
+        "count": "74"
+      },
+      {
+        "time": "第四周",
+        "count": "62"
+      }
+    ]
+  },
+  "buildingControlSystem": {
+    "byYear": [
+      {
+        "stateType": "0",
+        "typePercent": "5"
+      },
+      {
+        "stateType": "1",
+        "typePercent": "10"
+      },
+      {
+        "stateType": "2",
+        "typePercent": "28"
+      },
+      {
+        "stateType": "3",
+        "typePercent": "57"
+      }
+    ],
+    "bymonth": [
+      {
+        "stateType": "0",
+        "typePercent": "15"
+      },
+      {
+        "stateType": "1",
+        "typePercent": "8"
+      },
+      {
+        "stateType": "2",
+        "typePercent": "48"
+      },
+      {
+        "stateType": "3",
+        "typePercent": "29"
+      }
+    ]
+  },
+  "inspectionWorkToday": "32",
+  "inspectionCompleted": "20",
+  "unfinishedInspection": "2",
+  "maintenanceSingular": "9",
+  "processing": "2",
+  "processed": "2"
+}

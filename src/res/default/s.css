@@ -1,0 +1,104 @@
+﻿thead > tr {
+  background-color: #c8c8c8
+}
+
+.btn-skin {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-skin:focus,
+.btn-skin.focus,
+.btn-down {
+  color: #fff;
+  background-color: /*color*/ #28bf08 /**/;
+  border-color: #8c8c8c;
+}
+
+.btn-skin:hover {
+  color: #fff;
+  background-color: /*color*/ #28bf08 /**/;
+  border-color: #adadad;
+}
+
+.btn-skin:active,
+.btn-skin.active,
+.open > .dropdown-toggle.btn-skin {
+  color: #fff;
+  background-color: /*color*/ #28bf08 /**/;
+  border-color: #adadad;
+}
+
+.btn-skin:active:hover,
+.btn-skin.active:hover,
+.open > .dropdown-toggle.btn-skin:hover,
+.btn-skin:active:focus,
+.btn-skin.active:focus,
+.open > .dropdown-toggle.btn-skin:focus,
+.btn-skin:active.focus,
+.btn-skin.active.focus,
+.open > .dropdown-toggle.btn-skin.focus {
+  color: #fff;
+  background-color: /*color*/ #28bf08 /**/;
+  border-color: #8c8c8c;
+}
+
+.btn-skin:active,
+.btn-skin.active,
+.open > .dropdown-toggle.btn-skin {
+  background-image: none;
+}
+
+.btn-skin.disabled,
+.btn-skin[disabled],
+fieldset[disabled] .btn-skin,
+.btn-skin.disabled:hover,
+.btn-skin[disabled]:hover,
+fieldset[disabled] .btn-skin:hover,
+.btn-skin.disabled:focus,
+.btn-skin[disabled]:focus,
+fieldset[disabled] .btn-skin:focus,
+.btn-skin.disabled.focus,
+.btn-skin[disabled].focus,
+fieldset[disabled] .btn-skin.focus,
+.btn-skin.disabled:active,
+.btn-skin[disabled]:active,
+fieldset[disabled] .btn-skin:active,
+.btn-skin.disabled.active,
+.btn-skin[disabled].active,
+fieldset[disabled] .btn-skin.active {
+  background-color: #fff;
+  border-color: #ccc;
+  color: gray;
+}
+
+.btn-skin .badge {
+  color: #fff;
+  background-color: #333;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  background: /*color*/ #28bf08 /**/;
+}
+
+#scene_container {
+  /* background-color:skyblue; */
+  /*background: linear-gradient(to bottom,rgb(229,229,229),rgb(90,106,124));*/
+  background: linear-gradient(to bottom, #6495ED, #ffffff);
+  z-index: -1;
+}
+
+#scene_design {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  background-image: url(design.png);
+  background-position-x: center;
+  padding-top: 38px;
+  float: right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+@font-face {  
+  font-family: 'pingfang';  
+  src: url('./PingFangLight.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'Roboto-Light';  
+  src: url('./Roboto-Light.ttf');
+  font-weight: normal;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'SF-UI-Text-Light';  
+  src: url('./SF-UI-Text-Light.otf');
+  font-weight: normal;  
+  font-style: normal;  
+}

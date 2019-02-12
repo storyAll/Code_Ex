@@ -1,0 +1,253 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: #fafafa
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+.fulltab {
+    width: 100%;
+    height: 100%;
+    border: 0 !important;
+    border-spacing: 0px !important;
+    border-collapse: separate !important
+}
+
+.date_ {
+    width: 80pt !important
+}
+
+.alert {
+    margin-bottom: 2px
+}
+
+#root_view {
+    overflow: hidden
+}
+
+.ui-slider-horizontal {
+    height: auto !important
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 0px none #fff;
+    background: #fff url("common/slider-button.png") 50% 50% repeat-x;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.6em;
+    margin-left: -.6em;
+}
+
+.rowset {
+    margin-bottom: 5px
+}
+
+    .rowset .ui-slider {
+        margin-top: 3px
+    }
+
+.tableset td {
+    padding: 0 3px 5px 0
+}
+
+.tabnowrap th, .tabnowrap td {
+    white-space: nowrap
+}
+/*.navbar-collapse.collapse{display:block!important;}*/
+.navbar-nav > li, .navbar-nav {
+    float: left !important;
+    margin: auto !important
+}
+/*.navbar-nav.navbar-right:last-child{margin-right:-15px!important;}*/
+/*.navbar-right{float:right!important;}*/
+.navbar {
+    border-radius: 4px !important;
+    min-height: 40px !important
+}
+
+.nav > li > a {
+    padding: 7px 7px !important
+}
+
+.hiddenform {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width: 1px !important;
+    height: 1px !important;
+    display: block
+}
+
+    .hiddenform input {
+        width: 1px !important;
+        height: 1px !important
+    }
+
+.dstedit {
+    width: 150px
+}
+
+.view {
+    position: absolute;
+}
+
+.view_table {
+    width: 100%;
+    height: 100%;
+    border: 0px none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.view_caption {
+    /* cursor:move; */
+    height: 24px;
+    background: black url(default/g.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: medium;
+    vertical-align: middle;
+    border: 1px solid #77d5f7;
+}
+
+    .view_caption button {
+        background-repeat: no-repeat;
+        background-position: 4px 4px;
+        width: 26px;
+        height: 24px;
+        float: right;
+        background-color: transparent;
+        opacity: 0.7;
+        /* border:1px solid white; */
+        margin-left: 2px;
+        border-style: none;
+        cursor: pointer;
+    }
+
+#scene_tool a {
+    cursor: pointer;
+}
+
+#structure_ {
+    top: 0;
+    right: 0;
+    width: 366px;
+    line-height: 22px;
+}
+
+    #structure_ ul, #structure_ li {
+        list-style-image: url(common/m.png);
+        text-indent: -7px;
+        margin-top: -6px;
+        white-space: nowrap;
+    }
+
+    #structure_ ul {
+        background-image: url(common/u.png);
+        background-repeat: no-repeat repeat;
+        margin-left: -17px;
+    }
+
+    #structure_ .last {
+        background-image: none;
+        list-style-image: url(common/l.png);
+    }
+
+#structure_content, #property_content {
+    width: 100%;
+    /* resize: both; */
+    overflow: auto;
+    /* background: rgba(202, 206, 206, 0.5); */
+    /* -moz-box-shadow: 1px 0px 26px 13px rgb(128, 128, 128);
+    -webkit-box-shadow: 1px 0px 26px 13px rgb(128, 128, 128);
+    box-shadow: 1px 0px 26px 13px rgb(128, 128, 128); */
+    border: lightgray 1px solid;
+}
+
+    #structure_content input {
+        /*margin: 3px 3px 3px 4px;*/
+        margin: auto 2px 0px 2px;
+    }
+
+    #structure_content span {
+        font-size: medium !important;
+        cursor: pointer;
+    }
+
+.spans, .spans span {
+    font-weight: bold !important;
+    color: blue !important;
+}
+
+.collapsed, .expanded {
+    padding-left: 16px !important;
+    background-repeat: no-repeat;
+    /*background-position-x: -1px;*/
+    background-position-y: -1px;
+    background-size: 16px;
+}
+
+.collapsed {
+    background-image: url(common/a.png);
+}
+
+.expanded {
+    background-image: url(common/b.png);
+}
+
+.scene_progress > div {
+    /*position: absolute;*/
+    margin-left: 50px;
+    margin-top: 4px;
+    /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+    font-weight: bold;
+    color: white;
+}
+
+.ui-dialog td {
+    padding: 2px 2px 2px 6px;
+}
+
+.ui-dialog input {
+    width: 80px;
+    color: black !important;
+}
+
+.ui-dialog select {
+    color: black !important;
+}
+
+.ui-dialog button {
+    border: 1px solid #666666 !important;
+    background: #555555 url(../external/jquery-ui-1.11.4/images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x !important;
+    font-weight: bold !important;
+    color: #eeeeee !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    display: none !important;
+}
+
+.menuitemnormal{
+    padding-left: 3.2em!important;
+}
+.menuitemchecked {
+    padding-left: 1.4em;
+}
+.disabled .caret{
+    display:none;
+}

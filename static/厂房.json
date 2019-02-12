@@ -1,0 +1,4 @@
+{"ManageCompanyID":"tbjs","ManageCompanyName":"天保建设","WorkBuildingInfoTree":[
+    {"WorkBuildingID":"wb_0","X":117.393061,"Y":39.161752,"Name":"1号厂房",
+        "label1":"巡检待处理 12","label2":"维保待处理 2"},
+        {"WorkBuildingID":"wb_1","X":117.392158,"Y":39.161616,"Name":"2号厂房","label1":"巡检待处理 12","label2":"维保待处理 2"},{"WorkBuildingID":"wb_2","X":117.394175,"Y":39.160808,"Name":"3号厂房","label1":"巡检待处理 12","label2":"维保待处理 2"},{"WorkBuildingID":"wb_3","X":117.396299,"Y":39.162221,"Name":"4号厂房","label1":"巡检待处理 12","label2":"维保待处理 2"},{"WorkBuildingID":"wb_4","X":117.393258,"Y":39.159951,"Name":"5号厂房","label1":"巡检待处理 12","label2":"维保待处理 2"}],"PipeNetworkInfo":["line0","line1","line2","line3"]}
